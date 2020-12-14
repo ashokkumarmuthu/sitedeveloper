@@ -1,13 +1,4 @@
-<?php 
-error_reporting(0);
-$result="";
-if (isset($_POST['submit'])) {
 
-
-		
-	    header('Location: contact1.php');
-}
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -36,6 +27,16 @@ if (isset($_POST['submit'])) {
 <!--===============================================================================================-->
 
 </head>
+<?php 
+error_reporting(0);
+$result="";
+if (isset($_POST['submit'])) {
+
+
+		
+	    header('Location: contact1.php');
+}
+?>
 <body>
 
 <form action="contact.php" method="post">
