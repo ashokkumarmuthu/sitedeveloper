@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>D&A</title>
+  <title>AK Org</title>
   <meta name="keywords" content="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.">
   <meta name="description" content="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.">
   
@@ -12,7 +12,21 @@
   <link rel="stylesheet" href="temp/styles/styles.css">
 </head>
 <body>
-  <div class="main-wrapper">
+	<style>
+  	.logo .mobile {
+    	display: none;
+  	}
+	
+  	@media (max-width: 700px) {
+    	.logo .mobile {
+    		display: block;
+    	}
+    	.logo .desktop {
+    	  	display: none;
+    	}
+  	}
+	</style>
+ 	<div class="main-wrapper">
     <header class="header header--bg">
       <div class="container">
         <nav class="navbar">
@@ -22,22 +36,28 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span> 
             </button><br>
-            <div style="color: white;font-size: 100%;"><img src ="logo.png"><b> DRIVES & ACTUATORS</b></div>
+            <!-- <div><img src ="logo.png"></div> -->
+            <div class="logo">
+  			<img src="logo.png" class="desktop" />
+  			<img src="logo.png" class="mobile" width="200" />
+			</div>
           </div>
           
           <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav pull-right">
               <li><a href="index.html">HOME</a></li>
-              <li><a href="project.html">PROJECTS</a></li>
-              <li><a href="achievement.html">ACHIEVEMENTS</a></li> 
+              <li><a href="news.html">NEWS</a></li>
+              <li><a href="maps.html">MAPS</a></li> 
+              <li><a href="gallery.html">GALLERY</a></li> 
+              <li><a href="about.html">ABOUT US</a></li>
               <li><a href="contact.php" target="_blank">CONTACT</a></li> 
             </ul>
           
         </div>
         </nav>
-        <div class="header__content text-center">
-          <span class="text1">DRIVES & ACTUATORS</span><br><br>
-          <div id='showMe' style="color: white; font-size: 17px; padding-left: 15px;padding-right: 20px; "><p>To impart knowledge and provide solution for various issues on electrical driver circuit for controlling induction motor, stepper, servo, permanent DC , brushless DC and DC geared motors in various applications.</p></div>
+        <div class="header__content text-center" >
+       		<span class="text1"><h1 style="font-size: 110%"><b>AK</h1></b><h1> ORGANIZATION</h1></span>
+          <div id='showMe' style="color: white; font-size: 17px; padding-left: 15px;padding-right: 20px;padding-top:10px "><p>We deliver effective and specialist national services which co-ordinate, strengthen and support activities aimed at protecting the peoples from infectious and environmental hazards.</p></div>
           <span class="text2"><a class="button button--margin-right button--hover" href="gallery.html">GALLERY</a></span>
         </div>
       </div>
@@ -48,21 +68,20 @@
     <section class="service">
       <div class="container">
         <div class="page-section text-center">
-          <!-- <h2 class="page-section__title">SERVICES WE OFFER</h2>
-          <p class="page-section__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p> -->
+          
           <div class="row gutters-40">
             <div class="col-md-4">
               <div class="thumbnail">
                 <i class="material-icons">trending_up</i>
-                <h4 class="service__title">Growth of your Knowledge</h4>
-                <p class="service__paragraph">We always helps to improve your Knowledge</p>
+                <h4 class="service__title">Improves peoples Health</h4>
+                <p class="service__paragraph">We always helps to improve peoples Health and Nutrition</p>
               </div>
             </div>
             <div class="col-md-4">
               <div class="thumbnail">
                 <i class="material-icons">adjust</i>
-                <h4 class="service__title">Fix your Target</h4>
-                <p class="service__paragraph">We helps you to fix your Target and to achieve it</p>
+                <h4 class="service__title">Our Target</h4>
+                <p class="service__paragraph">Our moto is to give our 100% help to the needy people</p>
               </div>
             </div>
             <div class="col-md-4">
@@ -77,53 +96,29 @@
         </div>
       </div>
     </section>
-    
-    <section class="contact contact--bg">
-      <div class="container">
-        <div class="page-section text-center">
-          <h2 class="page-section__title--white">We Always Work To Make A Difference</h2>
-          <p class="page-section__paragraph--white">If you like our works and have a project,contact us now</p>
-          <a class="button button--hover" href="contact.php" target="_blank">CONTACT US</a>
-        </div>
-      </div>
-    </section>
-          
-      <div class="container">
-        <section class="project">
-          <div class="page-section">
-            <div class="text-center">
-              <h2 class="page-section__title">FEATURED PROJECT</h2>
-              <p class="page-section__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-            </div>
+     <div class="container" style="margin-top: -100px">
+        <section class="team">
+          <div class="page-section text-center">
             <div class="row gutters-50">
-              <div class="col-md-4">
+              <div style="float:left;" class="col-md-6 col-lg-3">
                 <div class="thumbnail">
-                  <a href="assets/images/featured-project-pic1.png" target="_blank">
-                    <img class="img-responsive" src="assets/images/seed.png" alt="">
-                    <div class="caption">
-                      <h4 class="project__title">SEED SOWING MACHINE</h4>
-                    
-                      <!-- <p class="project__paragraph">Lorem ipsum dolor sit amet </p> -->
+            
+                    <img src ="assets/images/cat.png">
+                    <div class="caption team__caption">
+                      <h4 class="team__name">Catering Unemployment</h4>
+                      <p>The economic and labour crisis created by the COVID-19 pandemic could increase global unemployment by almost 25 million, according to a new assessment by the International Labour Organization (ILO). We are trying our best to catering them.</p>
                     </div>
-                  </a>
+            
+            
                 </div>
-              </div>
-              <div class="col-md-4">
+              </div style="margin-top: -100px">
+              <div style="float:right;" class="col-md-6 col-lg-3">
                 <div class="thumbnail">
-                  <a href="assets/images/featured-project-pic2.png" target="_blank">
-                    <br><br><img class="img-responsive" src="assets/images/line.png" alt=""><br><br>
-                    <div class="caption">
-                      <h4 class="project__title"><br>LINE FOLLOWER BOT</h4>
-                    </div>
-                  </a>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="thumbnail">
-                  <a href="assets/images/featured-project-pic3.png" target="_blank">
-                    <img class="img-responsive" src="assets/images/water.png" alt="">
-                    <div class="caption">
-                      <h4 class="project__title">WATER QUALITY MONITOR</h4>
+                  <a href="https://www.youtube.com/user/crashcourse" target="_blank">
+                    <img src="assets/images/hc.png" alt="">
+                    <div class="caption team__caption">
+                      <h4 class="team__name">Providing Healthcare To People</h4>
+                      <p>Pandemics always come up with various life-threatening issues. COVID-19 outbreak came up with the same issues along with certain other problems involving public, administrative and healthcare sector concerns. We are trying our best to keep them Healthy.</p>
                     </div>
                   </a>
                 </div>
@@ -131,27 +126,133 @@
             </div>
           </div>
         </section>
+      </div>  
+    <section class="contact contact--bg">
+      <div class="container">
+        <div class="page-section text-center"><br>
+          <h2 class="page-section__title--white">WE ALWAYS WORKS TO MAKE A DIFFERENCE</h2><br><br>
+          <a class="button button--hover" href="maps.html" target="">MAPS</a>
+        </div>
       </div>
+    </section>
+         <div class="container">
+        <section class="project">
+          <div class="page-section">
+            <div class="text-center">
+              <h2 class="page-section__title">Top 5 Countries where COVID-19 has its maximum spread</h2>
+            </div>
+          </div>
+        </section>
+      </div>
+    <style>
+
+table {
+  border-collapse: collapse;
+  border-spacing: 1;
+  width: 90%;
+  border: 6px solid rgba(0, 31, 55, 0.9);
+  margin: 5%;
+}
+
+th, td {
+  text-align: left;
+  color: white;
+  padding: 8px;
+  font-size: 18px;
+  border: 5px solid white;
+  font-weight: bold;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+tr:nth-child(even){background-color: rgba(5, 180, 249)}
+tr:nth-child(odd){background-color: rgba(5, 180, 249)}
+</style>
+         <div style="overflow-x:auto;">
+  <table>
+    <tr>
+      <th style="text-align: center;">SNO</th>
+      <th style="text-align: center;">COUNTRY</th>
+      <th style="text-align: center;">CASES</th>
+      <th style="text-align: center;">DEATH</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>UNITED STATES</td>
+      <td>16,757,178</td>
+      <td>306,561</td>
+
+      
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>INDIA</td>
+      <td>9,904,096</td>
+      <td>143,710</td>
+
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>BRAZIL</td>
+      <td>6,903,833</td>
+      <td>181,460</td>
+
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>RUSSIA</td>
+      <td>2,681,256</td>
+      <td>47,391</td>
+ 
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>FRANCE</td>
+      <td>2,376,852</td>
+      <td>57,911</td>
+    </tr>
+  </table>
+</div>
+ 
+      <div class="container">
+        <section class="project">
+          <div class="page-section">
+            <div class="text-center">
+              <h2 class="page-section__title"><b>How to Protect Yourself & Others</b></h2>
+              <div style="background-color: rgb(5, 180, 249);border-radius: 10px;align-content: center;margin-left: 10%;margin-right: 10%"><br><br>
+              <p style="color: white;text-align: left;padding-left: 10%;font-size: 150%"><b>&#9673 Wash your hands often<br>&#9673 Avoid close contact
+<br>&#9673
+Cover your mouth and nose with a mask when around others<br>&#9673
+Cover coughs and sneezes<br>&#9673
+Clean and disinfect<br>&#9673
+Monitor Your Health Daily<br></b></p><br><br>
+            </div>
+          </div><br>
+</div>
+</section>
+</div>
+
+
       <section class="overview overview--bg">
         <div class="container">
           <div class="page-section">
             <div class="overview__wrapper text-center">
               <ul>
                 <li>
-                  <h1 class="overview__number">75</h1>
-                  <p class="overview__title">STUDENTS</p>
+                  <h1 class="overview__number">72.4 M</h1>
+                  <p class="overview__title">TOTAL CASES</p>
                 </li>
                 <li>
-                  <h1 class="overview__number">30</h1>
-                  <p class="overview__title">PROJECT DONE</p>
+                  <h1 class="overview__number">47.4 M</h1>
+                  <p class="overview__title">RECOVERED</p>
                 </li>
                 <li>
-                  <h1 class="overview__number">40</h1>
-                  <p class="overview__title">COMPETITIONS</p>
+                  <h1 class="overview__number">23.4 M</h1>
+                  <p class="overview__title">ACTIVE</p>
                 </li>
                 <li>
-                  <h1 class="overview__number">350000</h1>
-                  <p class="overview__title">PRIZE WON</p>
+                  <h1 class="overview__number">1.61M</h1>
+                  <p class="overview__title">DEATH</p>
                 </li><br><br>
               </ul>
             </div>
@@ -162,26 +263,25 @@
       <div class="container">
         <section class="team">
           <div class="page-section text-center">
-            <h2 class="page-section__title">FACULTY INCHARGE</h2>
+            <h2 class="page-section__title">FREE AND BEST SOURCE TO STUDY (FOR STUDENTS)</h2><br><br>
             <div class="row gutters-50">
               <div style="float:left;" class="col-md-6 col-lg-3">
                 <div class="thumbnail">
-                  <a href="assets/images/team-pic1.png" target="_blank">
-                    <img src ="assets/images/sir.png" alt="">
+                  <a href="https://www.youtube.com/channel/UC8butISFwT-Wl7EV0hUK0BQ" target="_blank">
+                    <img src ="assets/images/fcc.png">
                     <div class="caption team__caption">
-                      <h4 class="team__name">Mr Santhosh Kumar K V</h4>
-                      <p class="team__title">Assistant Professor</p>
+                      <h4 class="team__name">FreeCodeCamp</h4>
                     </div>
                   </a>
+                </a>
                 </div>
               </div>
               <div style="float:right;" class="col-md-6 col-lg-3">
                 <div class="thumbnail">
-                  <a href="assets/images/team-pic2.png" target="_blank">
-                    <img src="assets/images/sir2.png" alt="">
+                  <a href="https://www.youtube.com/user/crashcourse" target="_blank">
+                    <img src="assets/images/cc.png" alt="">
                     <div class="caption team__caption">
-                      <h4 class="team__name">Mr Sasi Karan S</h4>
-                      <p class="team__title">Technical Instructor</p>
+                      <h4 class="team__name">CrashCourse</h4>
                     </div>
                   </a>
                 </div>
@@ -198,12 +298,12 @@
               <center>
               <div class="col-md-4 col-lg-3">
                 <div class="footer__first">
-                  <h2 class="footer__title">DRIVES & ACTUATORS</h2>
+                  <h2 class="footer__title">AK Organization</h2>
                   
                   <ul class="footer-first__social-icons">
-                    <li><a href="#"><i class="flaticon-facebook-letter-logo"></i></a></li>
-                    <li><a href="#"><i class="flaticon-twitter-logo"></i></a></li>
-                    <li><a href="#"><i class="flaticon-instagram-logo"></i></a></li>
+                    <li><a href="https://www.facebook.com/" target="_blank"><i class="flaticon-facebook-letter-logo"></i></a></li>
+                    <li><a href="https://twitter.com/" target="_blank"><i class="flaticon-twitter-logo"></i></a></li>
+                    <li><a href="https://www.instagram.com/" target="_blank"><i class="flaticon-instagram-logo"></i></a></li>
                     
                   </ul>
                 </div>
@@ -213,10 +313,11 @@
                   <h2 class="footer__title">QUICK LINK</h2>
                   <ul>
                     <li><a href="index.html">HOME</a></li>
-                    <li><a href="project.html">PROJECTS</a></li>
-                    <li><a href="achievement.html">ACHIEVEMENTS</a></li>
+                    <li><a href="news.html">NEWS</a></li>
+                    <li><a href="maps.html">MAPS</a></li> 
+                    <li><a href="gallery.html">GALLERY</a></li> 
+                    <li><a href="about.html">ABOUT US</a></li>
                     <li><a href="contact.php" target="_blank">CONTACT</a></li> 
-                    <li><a href="gallery.html">GALLERY</a></li>
                   </ul>
                 </div>
               </div>
@@ -224,7 +325,7 @@
                 <div class="footer__third">
                   <h2 class="footer__title">CONTACT US</h2>
                   <ul>
-                    <li><span class="glyphicon glyphicon-envelope"></span> <a href="#">driveslab@gmail.com</a></li>
+                    <li><span class="glyphicon glyphicon-envelope"></span> <a href="#">akorg@gmail.com</a></li>
                   </ul>
                 </div>
               </div>
@@ -232,11 +333,10 @@
                 <div class="footer__third">
                   <h2 class="footer__title">ADDRESS</h2>
                   <ul>
-                  <li style="color: white;font-size: 17px">AS Block<br>
-                    2nd Floor<br>
-                    Bannari Amman Institute Of Technology<br>
-                    Sathyamangalam-Erode<br>
-                    Tamil Nadu-638 401</li></ul>
+                  <li style="color: white;font-size: 17px">Main Branch<br>
+                    New Delhi<br>
+                    India<br>
+                    </li></ul>
                   </div>
                 </div>
               </center>

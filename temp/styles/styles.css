@@ -174,10 +174,9 @@ button:focus{
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 82%, 0% 100%);
             clip-path: polygon(0 0, 100% 0, 100% 82%, 0% 100%);
     background: url("../../assets/images/header-background.png") no-repeat;
-    
     height: 800px;
     position: relative;
-    background-size: cover;
+    background-size: auto;
     display: block;
 
   }
@@ -260,7 +259,7 @@ button:focus{
 }
 
 .navbar-header .icon-bar{
-  background-color: #fff !important;
+  background-color: #fff ;
 
 }
 

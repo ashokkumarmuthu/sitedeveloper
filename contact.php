@@ -3,51 +3,9 @@ error_reporting(0);
 $result="";
 if (isset($_POST['submit'])) {
 
-	require 'phpmailer/PHPMailerAutoload.php';
-	$mail = new PHPMailer;
 
-	$mail->Host='smtp.gmail.com';
-	$mail->Port=587;
-	$mail->SMTPAuth=true;
-	$mail->SMTPSecure='tls';
-// 	$mail->Username='';
-// 	$mail->Password='';
-
-	$name = $_POST['name'];
-	$rollno = $_POST['rollno'];
-	$year = $_POST['Year'];
-	$mailid = $_POST['mailid'];
-	$department = $_POST['department'];
-	$message = $_POST['message'];
-// 	$message = $department." ".$rollno
-// 	$header = "From: ".$mailid;
-	$txt = "you have received an email from ".$name.".<br>"."Department : ".$department.".<br>"."Roll no : ".$rollno.".<br>"."Year : ".$year.".<br>"."Message : ".$message;
-
-	$mail->setFrom($_POST['mailid'],$_POST['name']);
-	$mail->addAddress('ashokmuthu393939@gmail.com');
-	$mail->addReplyTo($_POST['mailid'],$_POST['name']);
-	$mail->isHTML(true);
-	$mail->Subject='From Submission';
-// 	$mail->Body=$_POST['name'];
-// 	$mail->Body=$_POST['rollno'];
-// 	$mail->Body=$_POST['Year'];
-	$mail->Body=$txt;
-// echo $msg;
-// 	$mail->Body=$message;
-
-// 	echo "fydtyrd";
-	if(!$mail->send()){
-		$result = "something wrong";
-	}
-	else{
-		$result="thanks for contacting"; 
-	    header('Location: load.php');
-
-	}
-
-
-
-
+		
+	    header('Location: contact1.php');
 }
 ?>
 <!DOCTYPE html>
@@ -95,25 +53,12 @@ if (isset($_POST['submit'])) {
 					<span class="focus-input100"></span>
 				</div>
 
-				<div class="wrap-input100 validate-input" data-validate = "Roll no required">
-					<span class="label-input100">Roll No</span>
-					<input class="input100" type="text" name="rollno" placeholder="Enter your Roll No">
+				<div class="wrap-input100 validate-input" data-validate = "Age required">
+					<span class="label-input100">Age</span>
+					<input class="input100" type="text" name="age" placeholder="Enter your Age">
 					<span class="focus-input100"></span>
 				</div>
 
-				<div class="wrap-input100 input100-select">
-					<span class="label-input100">Year</span>
-					<div>
-						<select class="selection-2" name="Year">
-							<option>Select Year</option>
-							<option>I</option>
-							<option>II</option>
-							<option>III</option>
-							<option>IV</option>
-						</select>
-					</div>
-					<span class="focus-input100"></span>
-				</div>
 
 				<div class="wrap-input100 validate-input" data-validate = "Mail id required">
 					<span class="label-input100">Mail Id</span>
@@ -121,15 +66,15 @@ if (isset($_POST['submit'])) {
 					<span class="focus-input100"></span>
 				</div>
 
-				<div class="wrap-input100 validate-input" data-validate = "Department is required">
-					<span class="label-input100">Department</span>
-					<input class="input100" type="text" name="department" placeholder="Enter your Department">
+				<div class="wrap-input100 validate-input" data-validate = "Country">
+					<span class="label-input100">Country</span>
+					<input class="input100" type="text" name="Country" placeholder="Enter your Country">
 					<span class="focus-input100"></span>
 				</div>
 
 				<div class="wrap-input100 validate-input" data-validate = "Message is required">
 					<span class="label-input100">Why do you want to join in this Lab</span>
-					<textarea class="input100" name="message" placeholder="Your message here..."></textarea>
+					<textarea class="input100" name="message" placeholder="Your message here about Donation or whatever..."></textarea>
 					<span class="focus-input100"></span>
 				</div>
 
